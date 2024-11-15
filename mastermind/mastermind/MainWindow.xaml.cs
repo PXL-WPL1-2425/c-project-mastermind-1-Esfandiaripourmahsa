@@ -36,5 +36,6 @@ namespace mastermind
 
             this.Title = "MasterMind  /  Code: ( " + string.Join(" , ", generatedCode)+" )"; 
         }
+
     }
 }

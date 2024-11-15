@@ -10,21 +10,41 @@
 
         <Button Content="Check code" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" FontSize="20" Height="55" Width="376"/>
         <ComboBox  Name="color1" HorizontalAlignment="Left" Margin="80,27,0,0" VerticalAlignment="Top" Width="150" Height="35">
-        
+            <ComboBoxItem Content="Red"></ComboBoxItem>
+            <ComboBoxItem Content="Orange"></ComboBoxItem>
+            <ComboBoxItem Content="Yellow"></ComboBoxItem>
+            <ComboBoxItem Content="Green"></ComboBoxItem>
+            <ComboBoxItem Content="White"></ComboBoxItem>
+            <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
         <ComboBox Name="color2" HorizontalAlignment="Left" Margin="248,27,0,0" VerticalAlignment="Top" Width="150" Height="35">
-           
+            <ComboBoxItem Content="Red"></ComboBoxItem>
+            <ComboBoxItem Content="Orange"></ComboBoxItem>
+            <ComboBoxItem Content="Yellow"></ComboBoxItem>
+            <ComboBoxItem Content="Green"></ComboBoxItem>
+            <ComboBoxItem Content="White"></ComboBoxItem>
+            <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
         <ComboBox Name="color3" HorizontalAlignment="Left" Margin="414,28,0,0" VerticalAlignment="Top" Width="150" Height="34">
-           
+            <ComboBoxItem Content="Red"></ComboBoxItem>
+            <ComboBoxItem Content="Orange"></ComboBoxItem>
+            <ComboBoxItem Content="Yellow"></ComboBoxItem>
+            <ComboBoxItem Content="Green"></ComboBoxItem>
+            <ComboBoxItem Content="White"></ComboBoxItem>
+            <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
         <ComboBox Name="color4" HorizontalAlignment="Left" Margin="580,27,0,0" VerticalAlignment="Top" Width="150" Height="35">
-           
+            <ComboBoxItem Content="Red"></ComboBoxItem>
+            <ComboBoxItem Content="Orange"></ComboBoxItem>
+            <ComboBoxItem Content="Yellow"></ComboBoxItem>
+            <ComboBoxItem Content="Green"></ComboBoxItem>
+            <ComboBoxItem Content="White"></ComboBoxItem>
+            <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
-        <Image Name="imageColor1" HorizontalAlignment="Left" Height="100" Margin="103,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image Name="imageColor2" HorizontalAlignment="Left" Height="100" Margin="275,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image Name="imageColor3" HorizontalAlignment="Left" Height="100" Margin="445,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image Name="imageColor4" HorizontalAlignment="Left" Height="100" Margin="604,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Name="labelColor1" HorizontalAlignment="Left" Height="100" Margin="103,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Name="labelColor2" HorizontalAlignment="Left" Height="100" Margin="275,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Name="labelColor3" HorizontalAlignment="Left" Height="100" Margin="445,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Name="labelColor4" HorizontalAlignment="Left" Height="100" Margin="604,114,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
