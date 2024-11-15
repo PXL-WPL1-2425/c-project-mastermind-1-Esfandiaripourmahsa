@@ -41,10 +41,7 @@
             <ComboBoxItem Content="White"></ComboBoxItem>
             <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
-        <Label Name="labelColor1" HorizontalAlignment="Left" Height="100" Margin="103,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Name="labelColor2" HorizontalAlignment="Left" Height="100" Margin="275,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Name="labelColor3" HorizontalAlignment="Left" Height="100" Margin="445,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Name="labelColor4" HorizontalAlignment="Left" Height="100" Margin="604,114,0,0" VerticalAlignment="Top" Width="100"/>
+      
 
     </Grid>
 </Window>
