@@ -9,7 +9,7 @@
     <Grid>
 
         <Button Content="Check code" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" FontSize="20" Height="55" Width="376"/>
-        <ComboBox  Name="color1" HorizontalAlignment="Left" Margin="80,27,0,0" VerticalAlignment="Top" Width="150" Height="35">
+        <ComboBox  Name="color1" HorizontalAlignment="Left" Margin="80,27,0,0" VerticalAlignment="Top" Width="150" Height="35" SelectionChanged="color1_SelectionChanged">
             <ComboBoxItem Content="Red"></ComboBoxItem>
             <ComboBoxItem Content="Orange"></ComboBoxItem>
             <ComboBoxItem Content="Yellow"></ComboBoxItem>
@@ -17,7 +17,7 @@
             <ComboBoxItem Content="White"></ComboBoxItem>
             <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
-        <ComboBox Name="color2" HorizontalAlignment="Left" Margin="248,27,0,0" VerticalAlignment="Top" Width="150" Height="35">
+        <ComboBox Name="color2" HorizontalAlignment="Left" Margin="248,27,0,0" VerticalAlignment="Top" Width="150" Height="35" SelectionChanged="color2_SelectionChanged">
             <ComboBoxItem Content="Red"></ComboBoxItem>
             <ComboBoxItem Content="Orange"></ComboBoxItem>
             <ComboBoxItem Content="Yellow"></ComboBoxItem>
@@ -25,7 +25,7 @@
             <ComboBoxItem Content="White"></ComboBoxItem>
             <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
-        <ComboBox Name="color3" HorizontalAlignment="Left" Margin="414,28,0,0" VerticalAlignment="Top" Width="150" Height="34">
+        <ComboBox Name="color3" HorizontalAlignment="Left" Margin="414,28,0,0" VerticalAlignment="Top" Width="150" Height="34" SelectionChanged="color3_SelectionChanged">
             <ComboBoxItem Content="Red"></ComboBoxItem>
             <ComboBoxItem Content="Orange"></ComboBoxItem>
             <ComboBoxItem Content="Yellow"></ComboBoxItem>
@@ -33,7 +33,7 @@
             <ComboBoxItem Content="White"></ComboBoxItem>
             <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
-        <ComboBox Name="color4" HorizontalAlignment="Left" Margin="580,27,0,0" VerticalAlignment="Top" Width="150" Height="35">
+        <ComboBox Name="color4" HorizontalAlignment="Left" Margin="580,27,0,0" VerticalAlignment="Top" Width="150" Height="35" SelectionChanged="color4_SelectionChanged">
             <ComboBoxItem Content="Red"></ComboBoxItem>
             <ComboBoxItem Content="Orange"></ComboBoxItem>
             <ComboBoxItem Content="Yellow"></ComboBoxItem>
@@ -41,7 +41,10 @@
             <ComboBoxItem Content="White"></ComboBoxItem>
             <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
-      
 
+        <Label Name="color1Label" HorizontalAlignment="Left" Height="100" Margin="103,114,0,0" VerticalAlignment="Top" Width="100" />
+        <Label Name="color2Label" HorizontalAlignment="Left" Height="100" Margin="275,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Name="color3Label" HorizontalAlignment="Left" Height="100" Margin="445,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Name="color4Label" HorizontalAlignment="Left" Height="100" Margin="604,114,0,0" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>
