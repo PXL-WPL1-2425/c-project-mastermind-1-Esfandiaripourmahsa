@@ -94,10 +94,67 @@ namespace mastermind
                 color4Label.Background = BrushColor(colorName);
             }
         }
-        
 
-       
-                
-    
+        private void CheckButton_Click(object sender, RoutedEventArgs e)
+        {
+            string guess1 = (color1.SelectedItem as ComboBoxItem)?.Content.ToString() ?? string.Empty;
+            string guess2 = (color2.SelectedItem as ComboBoxItem)?.Content.ToString() ?? string.Empty;
+            string guess3 = (color3.SelectedItem as ComboBoxItem)?.Content.ToString() ?? string.Empty;
+            string guess4 = (color4.SelectedItem as ComboBoxItem)?.Content.ToString() ?? string.Empty;
+
+            CheckGuesses(guess1, guess2, guess3, guess4);
+
+        }
+        private void ClearBorder()
+        {
+            color1Label.BorderBrush = Brushes.Transparent;
+            color2Label.BorderBrush = Brushes.Transparent;
+            color3Label.BorderBrush = Brushes.Transparent;
+            color4Label.BorderBrush = Brushes.Transparent;
+        }
+
+        private void CheckGuesses(string guess1, string guess2, string guess3, string guess4)
+        {
+           List<string?> guesses = new List<string?> { guess1, guess2, guess3, guess4 };
+
+            string?[] copy = (string?[])generatedCode.Clone();
+            ClearBorder();
+
+
+
+            for (int i = 0; i < guesses.Count; i++)
+            {
+                if (guesses[i] == copy[i] && guesses[i] != null && copy[i] != null)
+                {
+                    GetLabel(i).BorderBrush = Brushes.DarkRed;
+                    GetLabel(i).BorderThickness = new Thickness(2);
+                    copy[i] = null;
+                    guesses[i]= null;
+                }
+                else if (guesses[i] != null && copy.Contains(guesses[i]))
+                {
+
+                    GetLabel(i).BorderBrush = Brushes.Wheat;
+                    GetLabel(i).BorderThickness = new Thickness(2);
+
+                }
+            }
+
+        }
+
+        
+        private Label? GetLabel(int Index)
+        {
+            switch (Index)
+            {
+                case 0: return color1Label.Child as Label;
+                case 1: return color2Label.Child as Label;
+                case 2:return color3Label.Child as Label;
+                case 3: return color4Label.Child as Label;
+                default:return null;
+            }
+
+
+        }
     }
 }

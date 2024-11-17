@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mastermind"
         mc:Ignorable="d"
-        Title="MasterMind" Height="450" Width="800">
+        Title="MasterMind" Height="450" Width="800" >
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
-        <Button Content="Check code" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" FontSize="20" Height="55" Width="376"/>
+        <Button Content="Check code" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" FontSize="24" Height="55" Width="376" Click="CheckButton_Click" Background="#FFC00000" BorderBrush="Black" BorderThickness="5,5,5,5" Foreground="White" FontFamily="Tempus Sans ITC"/>
         <ComboBox  Name="color1" HorizontalAlignment="Left" Margin="80,27,0,0" VerticalAlignment="Top" Width="150" Height="35" SelectionChanged="color1_SelectionChanged">
             <ComboBoxItem Content="Red"></ComboBoxItem>
             <ComboBoxItem Content="Orange"></ComboBoxItem>
@@ -42,9 +48,18 @@
             <ComboBoxItem Content="Blue"></ComboBoxItem>
         </ComboBox>
 
-        <Label Name="color1Label" HorizontalAlignment="Left" Height="100" Margin="103,114,0,0" VerticalAlignment="Top" Width="100" />
-        <Label Name="color2Label" HorizontalAlignment="Left" Height="100" Margin="275,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Name="color3Label" HorizontalAlignment="Left" Height="100" Margin="445,114,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Name="color4Label" HorizontalAlignment="Left" Height="100" Margin="604,114,0,0" VerticalAlignment="Top" Width="100"/>
+        <Border Name="color1Label" HorizontalAlignment="Left" Height="100" Margin="103,114,0,0" VerticalAlignment="Top" Width="100" BorderBrush="Black" BorderThickness="2" CornerRadius="50">
+            <Label Background="Transparent"/>
+        </Border>
+
+        <Border Name="color2Label" HorizontalAlignment="Left" Height="100" Margin="275,114,0,0" VerticalAlignment="Top" Width="100" BorderBrush="Black" BorderThickness="2" CornerRadius="50">
+            <Label Background="Transparent"/>
+        </Border>
+        <Border Name="color3Label" HorizontalAlignment="Left" Height="100" Margin="445,114,0,0" VerticalAlignment="Top" Width="100" BorderBrush="Black" BorderThickness="2" CornerRadius="50">
+            <Label Background="Transparent"/>
+        </Border>
+        <Border Name="color4Label" HorizontalAlignment="Left" Height="100" Margin="604,114,0,0" VerticalAlignment="Top" Width="100"  BorderBrush="Black" BorderThickness="2" CornerRadius="50">
+            <Label Background="Transparent"/>
+        </Border>
     </Grid>
 </Window>
